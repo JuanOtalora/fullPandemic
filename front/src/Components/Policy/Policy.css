@@ -1,0 +1,137 @@
+.policy{
+	display: flex;
+	padding-top: 10px;
+	background-color: #394f57;
+	padding-top: 10px;
+	border-width: 0px 4px 4px 4px;
+	border-color: #749593;
+	border-style: solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+   	-webkit-box-shadow: inset 0 0 10px #000000;
+   	box-shadow:         inset 0 0 10px #000000;
+}
+
+.bribePolitician{
+	display: flex;
+	flex:2;
+	align-items: center;
+	flex-direction: column;
+	background-color: #749593;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px; 
+	border-color: white;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.policyList{
+	display: flex;
+	flex:3;
+	align-items: center;
+	justify-content: center;
+}
+
+.pixelPolitician{
+	height: 400px;
+	width: 200px;
+	image-rendering: -moz-crisp-edges; /* Firefox */
+  	image-rendering: -webkit-optimize-contrast; /* Safari */
+  	image-rendering: pixelated; /* Chrome and Opera */
+}
+
+.bribeButton{
+	width: 100%;
+	height: 50px;
+	background-color: #fd9978;
+	font-family: 'Pixel';
+	color: white;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.policyBack{
+	min-height: 350px;
+	min-width: 340px;
+	image-rendering: -moz-crisp-edges; /* Firefox */
+  	image-rendering: -webkit-optimize-contrast; /* Safari */
+  	image-rendering: pixelated; /* Chrome and Opera */
+}
+
+.policyButtons{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.margin{
+	margin: 0;
+}
+
+
+.policyButton{
+	height: 60px;
+	font-family: 'Pixel';
+	margin-bottom: 10px;
+	background-color: #446668;
+	border-color: white;
+	display: flex;
+	color: white;
+	width: 100%;
+	font-size: 16px;
+	justify-content: space-around;
+	align-items: center;
+	border-width: 2px;
+
+
+}
+
+.policyRibbon{
+	width: 70px;
+	image-rendering: -moz-crisp-edges; /* Firefox */
+  	image-rendering: -webkit-optimize-contrast; /* Safari */
+  	image-rendering: pixelated; /* Chrome and Opera */
+}
+
+.policyDescription{
+	margin:0px;
+}
+
+.policyTitle{
+	color: white;
+	font-size: 30px;
+	margin:0px;
+}
+
+.policyTitleDiv{
+	display: flex;
+	align-items: center;
+}
+
+.checkMark{
+	width: 50px;
+	image-rendering: -moz-crisp-edges; /* Firefox */
+  	image-rendering: -webkit-optimize-contrast; /* Safari */
+  	image-rendering: pixelated; /* Chrome and Opera */
+}
+
+.titleP{
+	color: white;
+	margin: 0px;
+	margin-bottom: 5px;
+}
+
+
+.onePolicy{
+
+}

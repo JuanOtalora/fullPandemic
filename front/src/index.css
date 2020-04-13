@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Pixel';
+  src: local('Minecraft'), url(./fonts/Minecraft.ttf);
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Pixel';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

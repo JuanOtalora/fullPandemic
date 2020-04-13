@@ -1,0 +1,125 @@
+.totalMoney{
+	display: flex;
+	background-color: #394f57;
+	padding-top: 10px;
+	border-width: 0px 4px 4px 4px;
+	border-color: #749593;
+	border-style: solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+   	-webkit-box-shadow: inset 0 0 10px #000000;
+   	box-shadow:         inset 0 0 10px #000000;
+
+}
+
+.moneyClick{
+	display: flex;
+	flex: 2;
+}
+
+.moneyBuildings{
+	display: flex;
+	flex-direction: column;
+	flex:3;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.building{
+	position: relative;
+	color: white;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	font-family: 'Pixel';
+	background-color: #749593;
+	margin-bottom: 10px;
+	width: 100%;
+	justify-content: space-around;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+   	-webkit-box-shadow: inset 0 0 10px #000000;
+   	box-shadow:         inset 0 0 10px #000000;
+   	border-width: 4px;
+   	border-color: white;
+
+
+}
+
+.titleB{
+	color: white;
+	margin:0px;
+}
+
+.building:hover .tooltip{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cost{
+	font-size: 15px;
+}
+
+
+.insideBuilding{
+	display: flex;
+	flex-direction: column;
+	margin-right: 30px;
+
+}
+
+.bigNumber{
+	font-size: 25px;
+	margin:0px;
+}
+
+.mainButton{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Pixel';
+	background-color: #749593;
+	color: white;
+}
+
+.divider{
+	display: flex;
+	width: 100%;
+}
+
+
+.tooltip{
+	display: none;
+	position: absolute;
+	background-color: #fd9978;
+	left:-100px;
+	padding-left: 10px;
+	padding-right: 10px;
+	z-index: 10;
+}
+
+.titleTool{
+	display: flex;
+}
+
+.tooltipTitle{
+	font-size: 14px;
+
+}
+
+.moneyPer{
+	color: lightgreen;
+}
+
+
+.moneyTree{
+	width: 300px;
+	image-rendering: -moz-crisp-edges; /* Firefox */
+  	image-rendering: -webkit-optimize-contrast; /* Safari */
+  	image-rendering: pixelated; /* Chrome and Opera */
+}

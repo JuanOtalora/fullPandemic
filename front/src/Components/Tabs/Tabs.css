@@ -1,0 +1,110 @@
+.tabs{
+	display: flex;
+	height: 55px;
+	background-color: #446668;
+	border-color: #749593;
+	border-width: 0px 4px 0px 4px;
+	padding-right: 10px;
+	padding-top: 0px;
+	border-style: solid;
+
+}
+
+.activeM{
+	background-color: #394f57;
+	font-family: 'Pixel';
+	
+	
+	width: 200px;
+	border-width: 4px 4px 0px 0px;
+	font-size: 15px;
+	border-style: solid;
+	color: white;
+	border-color: #749593;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+   	-webkit-box-shadow: inset 0 0 10px #000000;
+   	box-shadow:         inset 0 0 10px #000000;
+
+}
+
+.activeH{
+	background-color: #394f57;
+	font-family: 'Pixel';
+	
+	
+	width: 200px;
+	border-width: 4px 4px 0px 4px;
+	font-size: 15px;
+	border-style: solid;
+	color: white;
+	border-color: #749593;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+   	-webkit-box-shadow: inset 0 0 10px #000000;
+   	box-shadow:         inset 0 0 10px #000000;
+
+}
+
+.activeP{
+	background-color: #394f57;
+	font-family: 'Pixel';
+	
+	
+	width: 200px;
+	border-width: 4px 4px 0px 4px;
+	font-size: 15px;
+	border-style: solid;
+	color: white;
+	border-color: #749593;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+   	-webkit-box-shadow: inset 0 0 10px #000000;
+   	box-shadow:         inset 0 0 10px #000000;
+
+}
+
+.inActive{
+	background-color: #446668;
+	font-family: 'Pixel';
+	color: white;
+	border-color: #394f57;
+	width: 200px;
+	border-width: 0px;
+	font-size: 15px;
+}
+
+.iconTab{
+	image-rendering: -moz-crisp-edges; /* Firefox */
+  	image-rendering: -webkit-optimize-contrast; /* Safari */
+  	image-rendering: pixelated; /* Chrome and Opera */
+  	width: 28px;
+  	height: 14px;
+  	margin-bottom: 3px;
+}
+
+.iconTabL{
+	image-rendering: -moz-crisp-edges; /* Firefox */
+  	image-rendering: -webkit-optimize-contrast; /* Safari */
+  	image-rendering: pixelated; /* Chrome and Opera */
+  	width: 28px;
+  	margin-bottom: 3px;
+}
+
+.iconTabM{
+	image-rendering: -moz-crisp-edges; /* Firefox */
+  	image-rendering: -webkit-optimize-contrast; /* Safari */
+  	image-rendering: pixelated; /* Chrome and Opera */
+  	width: 16px;
+  	height: 20px;
+  	margin-bottom: 1px;
+}
+
+
+.buttonTab{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.iconP{
+	margin:0;
+}
