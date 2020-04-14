@@ -8,7 +8,7 @@ import Policy from './Policy/Policy.js';
 import Labs from './Labs/Labs.js';
 
 class App extends React.Component {
-  
+//Considera colocar cons o let a tus funciones
   state={
     numberInfected: 1,
     modalAbout: false,
@@ -33,6 +33,7 @@ class App extends React.Component {
     progressPercentage: 0,
     deathPercentage: 5,
     modalLogin: false,
+    //Esto puede ir en la base de datos y lo traesc on un fetch, sería más organizado el código
     moneyBuildings: [
       {
         id: 0,
@@ -160,7 +161,7 @@ class App extends React.Component {
  
 
 
-  componentDidMount(){
+  function componentDidMount(){
     fetch("/getUser")
       .then(res => res.json())
       .then(user => this.setUser(user))
@@ -186,7 +187,7 @@ class App extends React.Component {
     }, 10000)
   }
 
-  passiveCure = () =>{
+  const passiveCure = () =>{
     this.setState(prevState =>{
       let progress = prevState.progressPercentage + prevState.passiveCure
       return{
@@ -195,7 +196,7 @@ class App extends React.Component {
     })
   }
 
-  setUser =(user)=>{
+  cont setUser =(user)=>{
     this.setState(prevState=> {
       return{
         username: user
@@ -204,7 +205,7 @@ class App extends React.Component {
   }
 
 
-  changeMoney = (delta) => {
+  const changeMoney = (delta) => {
     this.setState(prevState => {
       let money = prevState.money + delta;
       return{
@@ -213,7 +214,7 @@ class App extends React.Component {
     });
   }
 
-  changeDate = () => {
+  const changeDate = () => {
     this.setState(prevState =>{
       let dayReset = prevState.day
       let monthReset = prevState.month
@@ -237,7 +238,7 @@ class App extends React.Component {
     })
   }
 
-  donateMoney = () =>{
+  const donateMoney = () =>{
     this.setState(prevState=>{
       let money = prevState.money
       let newCost = prevState.policyList[3].cost;
@@ -266,7 +267,7 @@ class App extends React.Component {
     })
   }
 
-  deathCount = () =>{
+  const deathCount = () =>{
     if(this.state.day === 15 || this.state.day === 1){
     this.setState(prevState => {
       let newDeaths = 0;
@@ -281,7 +282,7 @@ class App extends React.Component {
     }
   }
 
-  unrestCount = ()=>{
+  const unrestCount = ()=>{
     this.setState(prevState=>
     {
       let newUnrest = prevState.unrest + prevState.passiveUnrest
@@ -292,7 +293,7 @@ class App extends React.Component {
   }
 
 
-  buyBuilding = (id) =>{
+  const buyBuilding = (id) =>{
     this.setState(prevState => {
       if(this.state.money >= prevState.moneyBuildings[id].cost){
         let minusMoney = -prevState.moneyBuildings[id].cost;
@@ -319,7 +320,7 @@ class App extends React.Component {
 
   }
 
-  changeActiveTab = (idTab) =>{
+  const changeActiveTab = (idTab) =>{
     this.setState(prevState =>{
       prevState.activeTab = idTab;
       return { activeTab: prevState.activeTab}
@@ -327,14 +328,14 @@ class App extends React.Component {
   }
 
 
-  save = () => {
+  const save = () => {
     const currentGameState = this.state
     const gameStateString = JSON.stringify(currentGameState) // 
     localStorage.setItem('gameState', gameStateString)
     console.log("Game Saved!")
   }
 
-  loadGame = () => {
+  const loadGame = () => {
     const previousGameJsonString = localStorage.getItem('gameState')
     const stateToObject = JSON.parse(previousGameJsonString)
     // Check this
@@ -343,7 +344,7 @@ class App extends React.Component {
   }
 
 
-  buyBuildingInfection = (idInfectionB) =>{
+  const buyBuildingInfection = (idInfectionB) =>{
     this.setState(prevState => {
       if(this.state.money >= prevState.infectionBuildings[idInfectionB].cost){
         let minusMoney = -prevState.infectionBuildings[idInfectionB].cost;
@@ -372,7 +373,7 @@ class App extends React.Component {
 
 
 
-  changePolicyState = (idPolicy) =>{
+  const changePolicyState = (idPolicy) =>{
     this.setState(prevState => {
       let policyChange = !prevState.policyList[idPolicy].enacted;
       let updatedPolicies = [...prevState.policyList];
@@ -404,7 +405,7 @@ class App extends React.Component {
   }
 
 
-  unlockLabs = () =>{
+  const unlockLabs = () =>{
     this.setState(prevState=> {
       let labsUnlocked = false;
       let money = prevState.money
@@ -422,7 +423,7 @@ class App extends React.Component {
     })
   }
 
-  changeLabFunding = (delta)=>{
+  const changeLabFunding = (delta)=>{
     this.setState(prevState => {
       let placeHolderChange = prevState.placeHolderfundingLabs;
       if(placeHolderChange + delta > prevState.usdPerSec){
@@ -440,7 +441,7 @@ class App extends React.Component {
 
   }
 
-  giveFunds = () => {
+  const giveFunds = () => {
     this.setState(prevState => {
       let change = prevState.placeHolderfundingLabs;
       let things = 0;
@@ -474,7 +475,7 @@ class App extends React.Component {
     })
   }
 
-  changeModalAbout = () =>{
+  const changeModalAbout = () =>{
     this.setState(prevState=> {
       let changeState = !prevState.modalAbout
       return{
@@ -483,7 +484,7 @@ class App extends React.Component {
     })
   }
 
-  changeModalLogin = () =>{
+const changeModalLogin = () =>{
     this.setState(prevState=> {
       let changeState = !prevState.modalLogin
       return{
