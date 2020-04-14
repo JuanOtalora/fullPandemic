@@ -2,6 +2,10 @@ import React from 'react';
 import './Health.css'
 import hospital from './img/hospital.png'
 
+//Este componente utiliza props, por lo que es aconsejable decir explicatamente de que tipo son y cómo se usarán
+import PropTypes from 'prop-types';
+
+
 const Health = (props) =>{
 
 	return(
@@ -80,5 +84,10 @@ const Health = (props) =>{
 	);
 
 }
+
+
+Greeting.propTypes = {
+  healthBuildings: PropTypes.array.isRequired,
+};
 
 export default Health;
